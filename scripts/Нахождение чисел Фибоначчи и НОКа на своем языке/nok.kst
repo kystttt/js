@@ -1,0 +1,13 @@
+input 45
+input 46
+set 48 0
+mul 45 46 47
+while
+-if 46 48 jump
+ost 45 46 49
+ass 45 46
+ass 46 49
+move while
+jump
+del 47 45 50
+print 50

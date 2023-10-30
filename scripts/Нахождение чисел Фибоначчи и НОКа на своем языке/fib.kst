@@ -1,0 +1,14 @@
+set 40 1
+set 41 0
+set 43 1
+set 38 2
+input 42
+while
+-if 43 42 jump
+add 40 41 39
+ass 41 40
+ass 40 39
+addnum 43 1
+move while
+jump
+print 40
