@@ -17,7 +17,7 @@ let hashT = hash(T);
 i = 0;
 while (i <= n - m) {
     j = 0;
-    if(hash(S.slice(i, i + m)) == hashT) {
+    if (hash(S.slice(i, i + m)) == hashT) {
         while (S[i + j] == T[j]) {
             j++;
 
@@ -28,7 +28,12 @@ while (i <= n - m) {
         }
     }
     
+    
     i++;
 }
-
-console.log(answer);
+if (answer.length > 0) {
+    console.log(answer);
+}
+else {
+    console.log('no matches found');
+}
